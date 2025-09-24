@@ -39,7 +39,7 @@ useEffect(() => {
 
   useEffect(() => {
     let mounted = true;
-    axios.get('http://localhost:5000/api/products')
+    axios.get('https://react-workshop-jyvm.onrender.com/api/products')
       .then(res => { if (mounted) setRelatedProducts(res.data || []); })
       .catch(err => console.error('Failed to fetch related products', err));
     return () => { mounted = false; };
@@ -149,7 +149,7 @@ const handleCopyLink = () => {
               {images.map((img, i) => (
                 <img
                   key={i}
-                  src={`http://localhost:5000${img}`}
+                  src={`https://react-workshop-jyvm.onrender.com${img}`}
                   alt={`${product.name}-${i}`}
                   onClick={() => handleThumbClick(img)}
                   style={{
@@ -199,7 +199,7 @@ const handleCopyLink = () => {
               </button>
 
               <img
-                src={`http://localhost:5000${mainImage}`}
+                src={`https://react-workshop-jyvm.onrender.com${mainImage}`}
                 alt={product.name}
                 style={{ maxWidth: '100%', maxHeight: '300px', objectFit: 'contain' }}
               />
@@ -503,7 +503,7 @@ const handleCopyLink = () => {
         }}>
           <div style={{ position: 'relative', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <img
-              src={`http://localhost:5000${rel.imageFront || rel.image}`}
+              src={`https://react-workshop-jyvm.onrender.com${rel.imageFront || rel.image}`}
               alt={rel.name}
               style={{ width: '100%', height: '140px', objectFit: 'contain' }}
             />
@@ -562,5 +562,6 @@ const handleCopyLink = () => {
     </div>
   );
 } 
+
 
 export default PurchaseOrders;
