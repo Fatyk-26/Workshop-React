@@ -675,7 +675,7 @@ const OrderSummary = () => {
                 style={{ width: "55px", height: "55px" }}
               >
                 <img
-                  src={`http://localhost:5000${item.image}`}
+                  src={`https://react-workshop-jyvm.onrender.com${item.image}`}
                   alt={item.name}
                   className="w-100 h-100 object-fit-cover"
                 />
