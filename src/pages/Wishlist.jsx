@@ -33,7 +33,7 @@ const Wishlist = () => {
             }}
           >
             <img
-              src={`http://localhost:5000${product.image || product.imageFront}`}
+              src={`https://react-workshop-jyvm.onrender.com${product.image || product.imageFront}`}
               alt={product.name}
               style={{ width: "100%", height: "150px", objectFit: "contain" }}
             />
@@ -63,5 +63,6 @@ const Wishlist = () => {
     </div>
   );
 };
+
 
 export default Wishlist;
