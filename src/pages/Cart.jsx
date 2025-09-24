@@ -36,7 +36,7 @@ function Cart({ cart, addToCart, removeFromCart }) {
           >
             <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
               <img
-                src={`http://localhost:5000${item.imageFront}`}
+                src={`https://react-workshop-jyvm.onrender.com${item.imageFront}`}
                 alt={item.name}
                 style={{
                   width: "120px",
@@ -123,3 +123,4 @@ function Cart({ cart, addToCart, removeFromCart }) {
 }
 
 export default Cart;
+
